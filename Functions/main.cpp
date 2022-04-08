@@ -1,6 +1,10 @@
 ﻿#include<iostream>
 using namespace std;
 
+
+
+
+
 int Add(int a, int b); //Прототип функции (объявление функции - Function declaration)
 int Sub(int a, int b); // Прототип состоит только из заголовка функции
 int Mul(int a, int b);
@@ -39,3 +43,5 @@ double Div(int a, int b)
 	return (double)a / b;
 
 }
+
+
