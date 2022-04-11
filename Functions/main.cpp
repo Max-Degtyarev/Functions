@@ -1,12 +1,8 @@
 ﻿#include<iostream>
 using namespace std;
 
-
-
-
-
 int Add(int a, int b); //Прототип функции (объявление функции - Function declaration)
-int Sub(int a, int b); // Прототип состоит только из заголовка функции
+double Sub(int q, int x); // Прототип состоит только из заголовка функции
 int Mul(int a, int b);
 double Div(int a, int b);
 
@@ -17,7 +13,7 @@ void main()
 	cout << "Введите два числа: "; cin >> a >> b;
 	int c = Add(a, b); //Вызов (использование) функции - Function call
 	cout << a << " + " << b << " = " << c << endl;
-	cout << a << " - " << b << " = " << Sub(a, b) << endl;
+	cout << a << " - " << b << " = " << Sub(b, a) << endl;
 	cout << a << " * " << b << " = " << Mul(a, b) << endl;
 	cout << a << " / " << b << " = " << Div(a, b) << endl;
 
@@ -29,14 +25,13 @@ int Add(int a, int b) // Реализация функции (Определен
 	int c = a + b;
 	return c;
 }
-int Sub(int a, int b) // Реализация состоит из заголовка и тела функции
+double Sub(int w, int r) // Реализация состоит из заголовка и тела функции
 {
-	return a - b;
+	return w - r;
 }
 int Mul(int a, int b)
 {
 	return a * b;
-
 }
 double Div(int a, int b)
 {
