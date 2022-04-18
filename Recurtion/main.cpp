@@ -14,27 +14,30 @@ void elevator(int floor)
 }
 
 
-//int factorial(int n)
-//{
-//	
-//	if (n < 0)
-//	{
-//		return 0;
-//	}
-//	if (n == 0)
-//	{
-//		cout << n << endl;
-//		cout << "--------------\n";
-//		return 1;
-//	}
-//	cout << n << endl;
-//	int f = n * factorial(n - 1);
-//	cout << f << endl;
-//	return f;
-//
-//
-//
-//}
+int factorial(int n)
+{
+	
+	if (n < 0)
+	{
+		return 0;
+	}
+	if (n == 0)
+	{
+		/*cout << n << endl;
+		cout << "--------------\n";*/
+		return 1;
+	}
+	return n * factorial(n - 1);
+
+
+
+	/*cout << n << endl;
+	int f = n * factorial(n - 1);
+	cout << f << endl;
+	return f;*/
+
+
+}
 
 double Power(double n, int exp)
 {
@@ -56,7 +59,8 @@ double Power(double n, int exp)
 
 
 //#define ELEVATOR
-//#define FACTORIAL
+#define FACTORIAL
+//#define EXP
 
 void main()
 {
@@ -76,13 +80,15 @@ void main()
 	cout << "Результат: " << factorial(n);
 #endif
 
+
+#ifdef EXP
 	int n;
 	int exp;
 	cout << "Введите число: "; cin >> n;
 	cout << "Введите степень: "; cin >> exp;
 	cout << "Результат: " << Power(n, exp) << endl << endl;
 	main();
-
+#endif
 
 
 }
