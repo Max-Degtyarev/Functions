@@ -56,24 +56,24 @@ double Power(double n, int exp)
 }
 
 
-void fib(int a, int b, int c)
+void Fibonacci(int a, int b, int c)
 {
 	if ((a + b) > c)return;
 	int d = a + b;
 	a = b;
 	b = d;
 	cout << d << " ";
-	fib(a, b, c);
+	Fibonacci(a, b, c);
 }
 
-void fib2(int a, int b, int f)
+void Fibonacci_2(int a, int b, int f)
 {
 	if (f == 0)return;
 	int d = a + b;
 	a = b;
 	b = d;
 	cout << d << " ";
-	fib2(a, b, f - 1);
+	Fibonacci_2(a, b, f - 1);
 
 }
 
@@ -125,11 +125,11 @@ void main()
 	int b = 1;
 	int c, f;
 	cout << "Введите предел ряда: "; cin >> c;
-	cout << a << " " << b << " "; fib(a, b, c);
+	cout << a << " " << b << " "; Fibonacci(a, b, c);
 	cout << endl;
 	cout << "Введите количество чисел ряда: "; cin >> f;
 	f -= 2;
-	cout << a << " " << b << " "; fib2(a, b, f);
+	cout << a << " " << b << " "; Fibonacci_2(a, b, f);
 
 
 #endif
