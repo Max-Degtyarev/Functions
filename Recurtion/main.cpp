@@ -41,15 +41,39 @@ int factorial(int n)
 
 double Power(double n, int exp)
 {
-	/*if (exp == 0)
+	if (exp == 0)
 	{
 		return 1;
 	}
-	else if (exp > 0)return n * Power(n, exp - 1);
+	return n * Power(n, exp - 1);
+	
+	/*else if (exp > 0)return n * Power(n, exp - 1);
 	else if (exp < 0)return 1 / n * Power(n, exp + 1);*/
 	//return exp == 0 ? 1 : exp > 0 ? n * Power(n, exp - 1) : 1 / n * Power(n, exp + 1);
-	return exp == 0 ? 1 : exp > 0 ? n * Power(n, exp - 1) : 1 / Power(n, -exp);
+	//return exp == 0 ? 1 : exp > 0 ? n * Power(n, exp - 1) : 1 / Power(n, -exp);
 
+
+}
+
+
+void fib(int a, int b, int c)
+{
+	if ((a + b) > c)return;
+	int d = a + b;
+	a = b;
+	b = d;
+	cout << d << " ";
+	fib(a, b, c);
+}
+
+void fib2(int a, int b, int f)
+{
+	if (f == 0)return;
+	int d = a + b;
+	a = b;
+	b = d;
+	cout << d << " ";
+	fib2(a, b, f - 1);
 
 }
 
@@ -57,10 +81,13 @@ double Power(double n, int exp)
 
 
 
-
 //#define ELEVATOR
-#define FACTORIAL
+//#define FACTORIAL
 //#define EXP
+#define FIB
+
+
+
 
 void main()
 {
@@ -89,6 +116,28 @@ void main()
 	cout << "Результат: " << Power(n, exp) << endl << endl;
 	main();
 #endif
+
+
+
+
+#ifdef FIB
+	int a = 0;
+	int b = 1;
+	int c, f;
+	cout << "Введите предел ряда: "; cin >> c;
+	cout << a << " " << b << " "; fib(a, b, c);
+	cout << endl;
+	cout << "Введите количество чисел ряда: "; cin >> f;
+	f -= 2;
+	cout << a << " " << b << " "; fib2(a, b, f);
+
+
+#endif
+
+
+
+
+
 
 
 }
