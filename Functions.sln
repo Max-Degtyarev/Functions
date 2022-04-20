@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Recurtion", "Recurtion\Recurtion.vcxproj", "{9E19C331-0534-4AA6-9860-F83321D97FEB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToe", "TicTacToe\TicTacToe.vcxproj", "{6EDC7101-F56B-4F18-B81E-E5801561808F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{9E19C331-0534-4AA6-9860-F83321D97FEB}.Release|x64.Build.0 = Release|x64
 		{9E19C331-0534-4AA6-9860-F83321D97FEB}.Release|x86.ActiveCfg = Release|Win32
 		{9E19C331-0534-4AA6-9860-F83321D97FEB}.Release|x86.Build.0 = Release|Win32
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Debug|x64.ActiveCfg = Debug|x64
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Debug|x64.Build.0 = Debug|x64
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Debug|x86.ActiveCfg = Debug|Win32
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Debug|x86.Build.0 = Debug|Win32
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Release|x64.ActiveCfg = Release|x64
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Release|x64.Build.0 = Release|x64
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Release|x86.ActiveCfg = Release|Win32
+		{6EDC7101-F56B-4F18-B81E-E5801561808F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -29,14 +29,10 @@ int factorial(int n)
 	}
 	return n * factorial(n - 1);
 
-
-
 	/*cout << n << endl;
 	int f = n * factorial(n - 1);
 	cout << f << endl;
 	return f;*/
-
-
 }
 
 double Power(double n, int exp)
@@ -45,13 +41,11 @@ double Power(double n, int exp)
 	{
 		return 1;
 	}
-	return n * Power(n, exp - 1);
-	
-	/*else if (exp > 0)return n * Power(n, exp - 1);
-	else if (exp < 0)return 1 / n * Power(n, exp + 1);*/
+	else if (exp > 0)return n * Power(n, exp - 1);
+	else if (exp < 0)return 1 / n * Power(n, exp + 1);
+
 	//return exp == 0 ? 1 : exp > 0 ? n * Power(n, exp - 1) : 1 / n * Power(n, exp + 1);
 	//return exp == 0 ? 1 : exp > 0 ? n * Power(n, exp - 1) : 1 / Power(n, -exp);
-
 
 }
 
@@ -78,13 +72,10 @@ void Fibonacci_2(int a, int b, int f)
 }
 
 
-
-
-
 //#define ELEVATOR
 //#define FACTORIAL
 //#define EXP
-#define FIB
+#define FIBONACCI
 
 
 
@@ -118,9 +109,7 @@ void main()
 #endif
 
 
-
-
-#ifdef FIB
+#ifdef FIBONACCI
 	int a = 0;
 	int b = 1;
 	int c, f;
@@ -130,11 +119,7 @@ void main()
 	cout << "Введите количество чисел ряда: "; cin >> f;
 	f -= 2;
 	cout << a << " " << b << " "; Fibonacci_2(a, b, f);
-
-
 #endif
-
-
 
 
 
